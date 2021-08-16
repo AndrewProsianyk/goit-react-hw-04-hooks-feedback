@@ -1,0 +1,30 @@
+.optionsList {
+  display: flex;
+  list-style: none;
+  width: 500px;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+}
+.optionButton {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.good {
+  composes: optionButton;
+  background-color: rgb(64, 206, 87);
+}
+.neutral {
+  composes: optionButton;
+  background-color: rgb(227, 238, 70);
+}
+.bad {
+  composes: optionButton;
+  background-color: rgb(236, 46, 46);
+}
